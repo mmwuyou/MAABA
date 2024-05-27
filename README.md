@@ -40,3 +40,7 @@ MAABA--是基于maaframework的一个碧蓝档案“一键长草”，使用强�
 
 7.后续活动的适配
 
+相关文件配置以及想学习怎么用maafarmerwork自己写或者加入本项目的可以看这个，大差不差的
+[https://github.com/MaaXYZ/MaaFramework](https://github.com/MaaXYZ/MaaFramework/blob/main/docs/zh_cn/1.1-%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B.md)
+关于本项目的内容正在制作说明文件中
+
