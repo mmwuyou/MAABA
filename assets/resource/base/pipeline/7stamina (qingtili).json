@@ -1,0 +1,181 @@
+{
+    "stamina 2":{
+        "next":[
+            "business71",
+            "quit71",
+            "work81"
+        ]
+    },
+    "quit71":{
+        "recognition":"TemplateMatch",
+        "template":"20.png",
+        "action":"Click",
+        "post_delay":3000,
+        "next":[
+            "business71"
+        ]
+    },
+    "business71":{
+        "recognition":"OCR",
+        "expected":"业务区",
+        "action":"Click",
+        "target":[
+            1160, 560, 81, 33
+        ],
+        "post_delay":2000,
+        "next":[
+            "task71"
+        ]
+    },
+    "task71":{
+        "recognition":"OCR",
+        "expected":"任务",
+        "action":"Click",
+        "post_delay":2000,
+        "next":[
+            "Clears your body71",
+            "up71"
+        ]
+    },
+    "up71":{
+        "action":"Swipe",
+        "begin":[
+            900, 145, 385, 575
+        ],
+        "end":[
+            900, 630, 385, 575
+        ],
+        "next":[
+            "Clears your body71"
+        ]
+    },
+    "Clears your body71":{
+        "recognition":"TemplateMatch",
+        "template":"25.png",
+        "action":"Click",
+        "post_delay":2000,
+        "target_offset":[
+            400, 0, 0, 0
+        ],
+        "next":[
+            "frequency71",
+            "Start fighting71"
+        ]
+    },
+    "frequency71":{
+        "recognition":"TemplateMatch",
+        "template":"26.png",
+        "action":"Click",
+        "next":[
+            "frequency72",
+            "Start fighting71"
+        ]
+    },
+    "frequency72":{
+        "recognition":"TemplateMatch",
+        "template":"26.png",
+        "action":"Click",
+        "next":[
+            "frequency71",
+            "Start fighting71"
+        ]
+    },
+    "Start fighting71":{
+        "recognition":"TemplateMatch",
+        "template":"27.png",
+        "action":"Click",
+        "post_delay":2000,
+        "next":[
+            "Start fighting72",
+            "quit72"
+        ]
+    },
+    "Start fighting72":{
+        "recognition":"OCR",
+        "expected":"进行",
+        "action":"Click",
+        "target":[
+            732, 483, 70, 39
+        ],
+        "post_delay":3000,
+        "next":[
+            "finish71",
+            "finish72"
+        ]
+    },
+    "finish71":{
+        "recognition":"OCR",
+        "expected":"跳过",
+        "post_delay":3000,
+        "action":"Click",
+        "next":[
+            "finish72"
+        ]
+    },
+    "finish72":{
+        "recognition":"OCR",
+        "expected":"确认",
+        "post_wait_freezes":3000,
+        "post_delay":3000,
+        "action":"Click",
+        "next":[
+            "continue72",
+            "frequency73",
+            "Start fighting73",
+            "quit72"
+        ]
+    },
+    "continue72":{
+        "recognition":"OCR",
+        "expected":"点击继续",
+        "action":"Click",
+        "next":[
+            "frequency73",
+            "Start fighting73",
+            "quit72"
+        ]
+    },
+    "frequency73":{
+        "recognition":"TemplateMatch",
+        "template":"26.png",
+        "action":"Click",
+        "next":[
+            "frequency71",
+            "Start fighting73",
+            "quit72"
+        ]
+    },
+    "Start fighting73":{
+        "recognition":"TemplateMatch",
+        "template":"27.png",
+        "action":"Click",
+        "next":[
+            "quit72"
+        ]
+    },
+    "quit72":{
+        "recognition":"OCR",
+        "expected":"取消",
+        "action":"Click",
+        "next":[
+            "quit73"
+        ]
+    },
+    "quit73":{
+        "recognition":"TemplateMatch",
+        "template":"17.png",
+        "action":"Click",
+        "next":[
+            "quit74"
+        ]
+    },
+    "quit74":{
+        "recognition":"TemplateMatch",
+        "template":"20.png",
+        "action":"Click",
+        "post_delay":3000,
+        "next":[
+            "work81"
+        ]
+    }
+}

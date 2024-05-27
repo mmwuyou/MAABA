@@ -1,0 +1,246 @@
+{
+    "work81":{
+        "next":[
+            "Work tasks"
+        ]
+    },
+    "Work tasks":{
+        "recognition":"TemplateMatch",
+        "template":"31.png",
+        "action":"Click",
+        "next":[
+            "One-click claim81",
+            "quit81"
+        ]
+    },
+    "quit81":{
+        "recognition":"TemplateMatch",
+        "template":"20.png",
+        "action":"Click",
+        "post_delay":3000,
+        "next":[
+            "One-click claim81"
+        ]
+    },
+    "One-click claim81":{
+        "recognition":"TemplateMatch",
+        "template":"28.png",
+        "action":"Click",
+        "post_delay":3000,
+        "next":[
+            "continue81",
+            "claim81",
+            "quit82"
+        ]
+    },
+    "continue81":{
+        "recognition":"OCR",
+        "expected":"点击继续",
+        "action":"Click",
+        "post_delay":3000,
+        "next":[
+            "One-click claim82",
+            "claim81",
+            "quit82"
+        ]
+    },
+    "claim81":{
+        "recognition":"TemplateMatch",
+        "template":"29.png",
+        "action":"Click",
+        "target":[
+            970, 664, 309, 56
+        ],
+        "post_delay":3000,
+        "next":[
+        "continue82",
+            "quit82"
+        ]
+    },
+    "One-click claim82":{
+        "recognition":"TemplateMatch",
+        "template":"28.png",
+        "action":"Click",
+        "post_delay":3000,
+        "next":[
+            "continue82",
+            "claim81",
+            "quit82"
+        ]
+    },
+    "continue82":{
+        "recognition":"OCR",
+        "expected":"点击继续",
+        "action":"Click",
+        "post_delay":2000,
+        "next":[
+            "claim81",
+            "quit82"
+        ]
+    },
+    "quit82":{
+        "recognition":"TemplateMatch",
+        "template":"20.png",
+        "action":"Click",
+        "post_delay":3000,
+        "next":[
+            "business81"
+        ]
+    },
+    "business81":{
+        "recognition":"OCR",
+        "expected":"业务区",
+        "action":"Click",
+        "post_delay":2000,
+        "next":[
+            "task81"
+        ]
+    },
+    "task81":{
+        "recognition":"OCR",
+        "expected":"任务",
+        "action":"Click",
+        "post_delay":2000,
+        "next":[
+            "Clears your body81",
+            "up81"
+        ]
+    },
+    "up81":{
+        "action":"Swipe",
+        "begin":[
+            900, 145, 385, 575
+        ],
+        "end":[
+            900, 630, 385, 575
+        ],
+        "next":[
+            "Clears your body81"
+        ]
+    },
+    "Clears your body81":{
+        "recognition":"TemplateMatch",
+        "template":"25.png",
+        "action":"Click",
+        "post_delay":2000,
+        "target_offset":[
+            400, 0, 0, 0
+        ],
+        "next":[
+            "frequency81",
+            "Start fighting81"
+        ]
+    },
+    "frequency81":{
+        "recognition":"TemplateMatch",
+        "template":"26.png",
+        "action":"Click",
+        "next":[
+            "frequency82",
+            "Start fighting81"
+        ]
+    },
+    "frequency82":{
+        "recognition":"TemplateMatch",
+        "template":"26.png",
+        "action":"Click",
+        "next":[
+            "frequency81",
+            "Start fighting81"
+        ]
+    },
+    "Start fighting81":{
+        "recognition":"TemplateMatch",
+        "template":"27.png",
+        "action":"Click",
+        "post_delay":2000,
+        "next":[
+            "Start fighting82",
+            "quit83"
+        ]
+    },
+    "Start fighting82":{
+        "recognition":"OCR",
+        "expected":"进行",
+        "action":"Click",
+        "target":[
+            732, 483, 70, 39
+        ],
+        "post_delay":3000,
+        "next":[
+            "finish81",
+            "finish82"
+        ]
+    },
+    "finish81":{
+        "recognition":"OCR",
+        "expected":"跳过",
+        "post_delay":3000,
+        "action":"Click",
+        "next":[
+            "finish82"
+        ]
+    },
+    "finish82":{
+        "recognition":"OCR",
+        "expected":"确认",
+        "post_wait_freezes":3000,
+        "post_delay":3000,
+        "action":"Click",
+        "next":[
+            "continue83",
+            "frequency83",
+            "Start fighting83",
+            "quit83"
+        ]
+    },
+    "continue83":{
+        "recognition":"OCR",
+        "expected":"点击继续",
+        "action":"Click",
+        "next":[
+            "frequency83",
+            "Start fighting83",
+            "quit83"
+        ]
+    },
+    "frequency83":{
+        "recognition":"TemplateMatch",
+        "template":"26.png",
+        "action":"Click",
+        "next":[
+            "frequency81",
+            "Start fighting83",
+            "quit83"
+        ]
+    },
+    "Start fighting83":{
+        "recognition":"TemplateMatch",
+        "template":"27.png",
+        "action":"Click",
+        "next":[
+            "quit83"
+        ]
+    },
+    "quit83":{
+        "recognition":"OCR",
+        "expected":"取消",
+        "action":"Click",
+        "next":[
+            "quit84"
+        ]
+    },
+    "quit84":{
+        "recognition":"TemplateMatch",
+        "template":"17.png",
+        "action":"Click",
+        "next":[
+            "quit85"
+        ]
+    },
+    "quit85":{
+        "recognition":"TemplateMatch",
+        "template":"20.png",
+        "action":"Click"
+    }
+}

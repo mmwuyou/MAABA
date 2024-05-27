@@ -1,0 +1,69 @@
+{
+    "Start up": {
+        "next": [
+            "weilandangan",
+            "qiehuanzhanghao",
+            "meiriqiandao",
+            "gonggao",
+            "cafe"
+        ]
+    },
+    "weilandangan": {
+        "recognition": "TemplateMatch",
+        "template": "02.png",
+        "action": "Click",
+        "target": true,
+        "post_delay": 50000,
+        "next": [
+            "weilandangan",
+            "qiehuanzhanghao",
+            "meiriqiandao",
+            "gonggao"
+        ]
+    },
+    "qiehuanzhanghao": {
+        "recognition": "TemplateMatch",
+        "template": "03.png",
+        "action": "Click",
+        "target": [
+            625,
+            540,
+            655,
+            180
+        ],
+        "post_delay": 10000,
+        "next": [
+            "weilandangan",
+            "qiehuanzhanghao",
+            "meiriqiandao",
+            "gonggao"
+        ]
+    },
+    "meiriqiandao": {
+        "recognition": "TemplateMatch",
+        "template": "04.png",
+        "action": "Click",
+        "post_delay": 7000,
+        "next": [
+            "weilandangan",
+            "qiehuanzhanghao",
+            "meiriqiandao",
+            "gonggao"
+        ]
+    },
+    "gonggao": {
+        "recognition": "OCR",
+        "expected": "公告",
+        "action": "Click",
+        "post_delay":3000,
+        "target": [
+            1142,
+            101,
+            138,
+            619
+        ],
+        "next":[
+            "cafe"
+        ]
+    }
+}

@@ -1,0 +1,136 @@
+{
+    "store":{
+        "next":[
+            "go store",
+            "quit51",
+            "stamina 1"
+        ]
+    },
+    "quit51":{
+        "recognition":"TemplateMatch",
+        "template":"20.png",
+        "action":"Click",
+        "post_delay":3000,
+        "next":[
+            "go store"
+        ]
+    },
+    "go store":{
+        "recognition":"OCR",
+        "expected":"商店",
+        "action":"Click",
+        "post_delay":3000,
+        "next":[
+            "down51"
+        ]
+    },
+    "down51":{
+        "recognition":"OCR",
+        "expected":"常规道具",
+        "action":"Swipe",
+        "begin":[
+            825, 150, 350, 800
+        ],
+        "end":[
+            825, -200, 350, 800
+        ],
+        "next":[
+            "down52"
+        ]
+    },
+    "down52":{
+        "action":"Swipe",
+        "begin":[
+            825, 150, 350, 800
+        ],
+        "end":[
+            825, -200, 350, 800
+        ],
+        "next":[
+            "down53"
+        ]
+    },
+    "down53":{
+        "action":"Swipe",
+        "begin":[
+            825, 150, 350, 800
+        ],
+        "end":[
+            825, -200, 350, 800
+        ],
+        "next":[
+            "prop51"
+        ]
+    },
+    "prop51":{
+        "action":"Click",
+        "target":[
+            1100, 199, 93, 88
+        ],
+        "next":[
+            "prop52"
+        ]
+    },
+    "prop52":{
+        "action":"Click",
+        "target":[
+            700, 415, 93, 88
+        ],
+        "next":[
+            "prop53"
+        ]
+    },
+    "prop53":{
+        "action":"Click",
+        "target":[
+            800, 415, 93, 88
+        ],
+        "next":[
+            "prop54"
+        ]
+    },
+    "prop54":{
+        "action":"Click",
+        "target":[
+            960, 415, 93, 88
+        ],
+        "next":[
+            "Select Buy",
+            "quit52"
+        ]
+    },
+    "Select Buy":{
+        "recognition":"OCR",
+        "expected":"选择购买",
+        "action":"Click",
+        "next":[
+            "continue51"
+        ]
+    },
+    "continue51":{
+        "recognition":"OCR",
+        "expected":"确认",
+        "action":"Click",
+        "post_delay":3000,
+        "next":[
+            "continue52"
+        ]
+    },
+    "continue52":{
+        "recognition":"OCR",
+        "expected":"点击继续",
+        "action":"Click",
+        "next":[
+            "quit52"
+        ]
+    },
+    "quit52":{
+        "recognition":"TemplateMatch",
+        "template":"09.png",
+        "action":"Click",
+        "post_delay":3000,
+        "next":[
+            "stamina 1"
+        ]
+    }
+}

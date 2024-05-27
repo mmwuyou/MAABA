@@ -1,0 +1,254 @@
+{
+    "cafe":{
+        "next":[
+            "coffee shop",
+            "quit21",
+            "manufactured"
+        ]
+    },
+    "quit21":{
+        "recognition":"TemplateMatch",
+        "template":"20.png",
+        "action":"Click",
+        "post_delay":3000,
+        "next":[
+            "coffee shop"
+        ]
+    },
+    "coffee shop": {
+        "recognition": "TemplateMatch",
+        "template": "05.png",
+        "action": "Click",
+        "post_delay": 5000,
+        "next": [
+            "到访成员",
+            "收益",
+            "invitation21",
+            "shoujiemian"
+        ]
+    },
+    "到访成员": {
+        "recognition": "OCR",
+        "expected": "确认",
+        "action": "Click",
+        "post_delay": 5000,
+        "next": [
+            "到访成员",
+            "收益",
+            "invitation21",
+            "shoujiemian"
+        ]
+    },
+    "收益": {
+        "recognition": "TemplateMatch",
+        "template": "15.png",
+        "action": "Click",
+        "target":[
+            1094, 620, 181, 100
+        ],
+        "next": [
+            "领取",
+            "Click"
+        ]
+    },
+    "领取": {
+        "recognition": "OCR",
+        "expected": "领取",
+        "action": "Click",
+        "next": [
+            "领取",
+            "Click"
+        ]
+    },
+    "Click": {
+        "recognition": "OCR",
+        "expected": "点击继续",
+        "post_delay": 3000,
+        "action": "Click",
+        "next": [
+            "邮箱溢出",
+            "结束"
+        ]
+    },
+    "邮箱溢出": {
+        "recognition": "OCR",
+        "expected": "确认",
+        "action": "Click",
+        "next": [
+            "邮箱溢出",
+            "结束"
+        ]
+    },
+    "结束": {
+        "recognition": "TemplateMatch",
+        "template": "07.png",
+        "action": "Click",
+        "target": [
+            903,
+            155,
+            377,
+            565
+        ],
+        "next": [
+            "invitation21",
+            "shoujiemian"
+        ]
+    },
+    "invitation21":{
+        "recognition":"TemplateMatch",
+        "template":"10.png",
+        "action":"Click",
+        "target":[
+            800, 650, 78, 24
+        ],
+        "next":[
+            "sort21",
+            "shoujiemian"
+        ]
+    },
+    "sort21":{
+        "recognition":"TemplateMatch",
+        "template":"11.png",
+        "action":"Click",
+        "next":[
+            "sort22"
+        ]
+    },
+    "sort22":{
+        "recognition":"OCR",
+        "expected":"好感等级",
+        "action":"Click",
+        "next":[
+            "sort23"
+        ]
+    },
+    "sort23":{
+        "recognition":"OCR",
+        "expected":"确认",
+        "action":"Click",
+        "next":[
+            "invitation22"
+        ]
+    },
+    "invitation22":{
+        "recognition":"TemplateMatch",
+        "template":"13.png",
+        "action":"Click",
+        "next":[
+            "invitation23"
+        ]
+    },
+    "invitation23":{
+        "recognition":"TemplateMatch",
+        "template":"14.png",
+        "action":"Click",
+        "target":[
+            670, 476, 97, 51
+        ],
+        "post_delay": 5000,
+        "next":[
+            "shoujiemian"
+        ]
+    },
+    "shoujiemian":{
+        "recognition":"TemplateMatch",
+        "template":"08.png",
+        "action":"Click",
+        "next":[
+            "shouquhaogan21",
+            "quit22"
+        ]
+    },
+    "shouquhaogan21": {
+        "skip_review": 6,
+        "is_sub": true,
+        "recognition": "TemplateMatch",
+        "template": [
+            "06.png",
+            "06 (1).png",
+            "06 (2).png"
+        ],
+        "green_mask": true,
+        "threshold": [
+            0.55,
+            0.55,
+            0.55
+        ],
+        "target_offset": [
+            50,
+            40,
+            0,
+            0
+        ],
+        "action": "Click",
+        "post_wait_freezes": {
+            "time": 10000,
+            "target": [
+                0,
+                660,
+                1280,
+                60
+            ]
+        },
+        "next": [
+            "haoganzengjia21",
+            "shouquhaogan21",
+            "quit22"
+        ]
+    },
+    "haoganzengjia21":{
+        "recognition":"OCR",
+        "expected":"好感等级提升",
+        "action":"Click",
+        "next":[
+            "shouquhaogan22",
+            "quit22"
+        ]
+    },
+    "shouquhaogan22": {
+        "skip_review": 6,
+        "is_sub": true,
+        "recognition": "TemplateMatch",
+        "template": [
+            "06.png",
+            "06 (1).png",
+            "06 (2).png"
+        ],
+        "green_mask": true,
+        "threshold": [
+            0.55,
+            0.55,
+            0.55
+        ],
+        "target_offset": [
+            50,
+            40,
+            0,
+            0
+        ],
+        "action": "Click",
+        "post_wait_freezes": {
+            "time": 10000,
+            "target": [
+                0,
+                660,
+                1280,
+                60
+            ]
+        },
+        "next": [
+            "haoganzengjia21",
+            "shouquhaogan21",
+            "quit22"
+        ]
+    },
+    "quit22":{
+        "recognition":"TemplateMatch",
+        "template":"09.png",
+        "action":"Click",
+        "post_delay":3000,
+        "next":[
+            "manufactured"
+        ]
+    }
+}
