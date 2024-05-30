@@ -112,7 +112,7 @@
         "recognition":"OCR",
         "expected":"确认",
         "action":"Click",
-        "post_delay":7000,
+        "post_delay":3000,
         "next":[
             "finish61"
         ]
@@ -120,7 +120,7 @@
     "finish61":{
         "recognition":"OCR",
         "expected":"确认",
-        "post_wait_freezes":10000,
+        "post_wait_freezes":3000,
         "post_delay":3000,
         "action":"Click",
         "next":[
@@ -183,7 +183,7 @@
         "recognition":"OCR",
         "expected":"确认",
         "action":"Click",
-        "post_delay":5000,
+        "post_delay":3000,
         "next":[
             "finish63"
         ]
@@ -191,7 +191,7 @@
     "finish63":{
         "recognition":"OCR",
         "expected":"确认",
-        "post_wait_freezes":10000,
+        "post_wait_freezes":3000,
         "post_delay":3000,
         "action":"Click",
         "next":[
@@ -278,7 +278,7 @@
         "recognition":"OCR",
         "expected":"确认",
         "action":"Click",
-        "post_delay":5000,
+        "post_delay":3000,
         "next":[
             "finish64"
         ]
@@ -286,11 +286,12 @@
     "finish64":{
         "recognition":"OCR",
         "expected":"确认",
-        "post_wait_freezes":10000,
+        "post_wait_freezes":3000,
         "post_delay":3000,
         "action":"Click",
         "next":[
-            "quit68"
+            "quit68",
+            "quit601"
         ]
     },
     "quit68":{
@@ -311,7 +312,7 @@
     },
     "quit601":{
         "recognition":"TemplateMatch",
-        "template":"09.png",
+        "template":"20.png",
         "action":"Click",
         "post_delay":3000,
         "next":[
