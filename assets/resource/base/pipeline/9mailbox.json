@@ -1,113 +1,93 @@
 {
-    "work81":{
+    "mail":{
         "next":[
-            "Work tasks",
-            "mail"
+            "mailbox",
+            "quit91"
         ]
     },
-    "Work tasks":{
-        "recognition":"TemplateMatch",
-        "template":"31.png",
-        "action":"Click",
-        "next":[
-            "One-click claim81",
-            "quit81"
-        ]
-    },
-    "quit81":{
+    "quit91":{
         "recognition":"TemplateMatch",
         "template":"20.png",
         "action":"Click",
         "post_delay":3000,
         "next":[
-            "One-click claim81"
+            "mailbox"
         ]
     },
-    "One-click claim81":{
+    "mailbox":{
         "recognition":"TemplateMatch",
-        "template":"28.png",
+        "template":"30.png",
         "action":"Click",
-        "post_delay":5000,
         "next":[
-            "continue81",
-            "claim81",
-            "quit82"
+            "One-click claim91"
         ]
     },
-    "continue81":{
-        "recognition":"OCR",
-        "expected":"点击继续",
-        "action":"Click",
-        "post_delay":7000,
-        "next":[
-            "One-click claim82",
-            "claim81",
-            "quit82"
-        ]
-    },
-    "claim81":{
-        "recognition":"TemplateMatch",
-        "template":"29.png",
-        "action":"Click",
-        "target":[
-            970, 664, 309, 56
-        ],
-        "post_delay":3000,
-        "next":[
-        "continue82",
-            "quit82"
-        ]
-    },
-    "One-click claim82":{
+    "One-click claim91":{
         "recognition":"TemplateMatch",
         "template":"28.png",
         "action":"Click",
         "post_delay":3000,
         "next":[
-            "continue82",
-            "claim81",
-            "quit82"
+            "continue91",
+            "items",
+            "quit92"
         ]
     },
-    "continue82":{
+    "continue91":{
         "recognition":"OCR",
         "expected":"点击继续",
-        "action":"Click",
         "post_delay":2000,
+        "action":"Click",
         "next":[
-            "claim81",
-            "quit82"
+            "items",
+            "quit92"
         ]
     },
-    "quit82":{
+    "items":{
+        "recognition":"TemplateMatch",
+        "template":"32.png",
+        "action":"DoNothing",
+        "next":[
+            "quit96"
+        ]
+    },
+    "quit96":{
+        "recognition":"TemplateMatch",
+        "template":"17.png",
+        "action":"Click",
+        "next":[
+            "quit92"
+        ]
+    },
+    "quit92":{
         "recognition":"TemplateMatch",
         "template":"20.png",
         "action":"Click",
         "post_delay":3000,
         "next":[
-            "business81"
+            "business91"
         ]
     },
-    "business81":{
+    "business91":{
         "recognition":"OCR",
         "expected":"业务区",
         "action":"Click",
         "post_delay":2000,
         "next":[
-            "task81"
+            "task91"
         ]
     },
-    "task81":{
+    "task91":{
         "recognition":"OCR",
         "expected":"任务",
         "action":"Click",
         "post_delay":2000,
         "next":[
-            "Clears your body81",
-            "up81"
+            "Clears your body91",
+            "up91"
         ]
     },
-    "up81":{
+    "up91":{
         "action":"Swipe",
         "begin":[
             900, 145, 385, 575
@@ -116,10 +96,10 @@
             900, 630, 385, 575
         ],
         "next":[
-            "Clears your body81"
+            "Clears your body91"
         ]
     },
-    "Clears your body81":{
+    "Clears your body91":{
         "recognition":"TemplateMatch",
         "template":"25.png",
         "action":"Click",
@@ -128,123 +108,122 @@
             400, 0, 0, 0
         ],
         "next":[
-            "frequency81",
-            "Start fighting81"
+            "frequency91",
+            "Start fighting91"
         ]
     },
-    "frequency81":{
+    "frequency91":{
         "recognition":"TemplateMatch",
         "template":"26.png",
         "action":"Click",
         "next":[
-            "frequency82",
-            "Start fighting81"
+            "frequency92",
+            "Start fighting91"
         ]
     },
-    "frequency82":{
+    "frequency92":{
         "recognition":"TemplateMatch",
         "template":"26.png",
         "action":"Click",
         "next":[
-            "frequency81",
-            "Start fighting81"
+            "frequency91",
+            "Start fighting91"
         ]
     },
-    "Start fighting81":{
+    "Start fighting91":{
         "recognition":"TemplateMatch",
         "template":"27.png",
         "action":"Click",
-        "post_delay":2000,
         "next":[
-            "Start fighting82",
-            "quit83"
+            "Start fighting92",
+            "quit92"
         ]
     },
-    "Start fighting82":{
+    "Start fighting92":{
         "recognition":"OCR",
         "expected":"进行",
         "action":"Click",
-        "target":[
-            732, 483, 70, 39
-        ],
         "post_delay":3000,
         "next":[
-            "finish81",
-            "finish82"
+            "finish91",
+            "finish92"
         ]
     },
-    "finish81":{
+    "finish91":{
         "recognition":"OCR",
         "expected":"跳过",
         "post_delay":3000,
         "action":"Click",
         "next":[
-            "finish82"
+            "finish92"
         ]
     },
-    "finish82":{
+    "finish92":{
         "recognition":"OCR",
         "expected":"确认",
         "post_wait_freezes":3000,
         "post_delay":3000,
         "action":"Click",
         "next":[
-            "continue83",
-            "frequency83",
-            "Start fighting83",
-            "quit83"
+            "continue92",
+            "frequency93",
+            "Start fighting93",
+            "quit93"
         ]
     },
-    "continue83":{
+    "continue92":{
         "recognition":"OCR",
         "expected":"点击继续",
         "action":"Click",
         "next":[
-            "frequency83",
-            "Start fighting83",
-            "quit83"
+            "frequency93",
+            "Start fighting93",
+            "quit93"
         ]
     },
-    "frequency83":{
+    "frequency93":{
         "recognition":"TemplateMatch",
         "template":"26.png",
         "action":"Click",
         "next":[
-            "frequency81",
-            "Start fighting83",
-            "quit83"
+            "frequency91",
+            "Start fighting93",
+            "quit93"
         ]
     },
-    "Start fighting83":{
+    "Start fighting93":{
         "recognition":"TemplateMatch",
         "template":"27.png",
         "action":"Click",
         "next":[
-            "quit83"
+            "quit93"
         ]
     },
-    "quit83":{
+    "quit93":{
         "recognition":"OCR",
         "expected":"取消",
         "action":"Click",
         "next":[
-            "quit84"
+            "quit94"
         ]
     },
-    "quit84":{
+    "quit94":{
         "recognition":"TemplateMatch",
         "template":"17.png",
         "action":"Click",
         "next":[
-            "quit85"
+            "quit95"
         ]
     },
-    "quit85":{
+    "quit95":{
         "recognition":"TemplateMatch",
         "template":"20.png",
         "action":"Click",
         "next":[
-            "mail"
+            "Stop"
         ]
+    },
+    "Stop":{
+        "action":"StopTask"
     }
 }
