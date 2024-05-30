@@ -4,7 +4,7 @@
 
 最后，我写的不咋地（~~纯小白，专业并非计算机类~~），还请各位大佬轻点喷，也欢迎各位大佬加入
 
-MAABA--是基于maaframework的一个碧蓝档案的“一键长草”，使用强大的maa截图工具和识别文字
+MAABA--是基于maaframework的一个碧蓝档案的“一键长草”，使用强大的maa截图工具和识别文字 (往下有使用说明)
 
 外服（~~b服也是~~）还没试过是否能行（整的时候以国服来整的），若不行，也欢迎各位大佬适配（b服可以）
 
@@ -32,4 +32,36 @@ MAABA--是基于maaframework的一个碧蓝档案的“一键长草”，使用�
 相关文件配置以及想学习怎么用maafarmerwork自己写或者加入本项目的可以看这个，大差不差的
 [https://github.com/MaaXYZ/MaaFramework](https://github.com/MaaXYZ/MaaFramework/blob/main/docs/zh_cn/1.1-%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B.md)
 关于本项目的内容正在制作说明文件中
+
+
+- MAABA使用教程及说明（图片加载可能较慢）
+- ![image](https://github.com/mm317670/mm317670/assets/142766247/ac886a42-ece3-46e7-a754-853daa2c3620) （运行该文件）
+- 如图，推荐选择第一个
+- ![image](https://github.com/mm317670/mm317670/assets/142766247/d83f9b54-9b3e-45da-874c-e674e978f7cf)
+
+- 如图，推荐第二个（两个adb都是雷电的）![image](https://github.com/mm317670/mm317670/assets/142766247/b0f098e8-887c-47b1-bd94-673bccb6f604)
+
+- 四、如图
+- ![image](https://github.com/mm317670/mm317670/assets/142766247/c0c0de4e-da2e-4496-a738-0447a0817bc2)
+
+- 1.切换adb
+- 2.切换官服/b服/外服（外服暂无）
+- 3.增加运行任务（可无视，具体解释看下面）
+- 4.移动任务（即移动任务执行顺序）
+- 5.删除任务
+- 6.运行任务
+- 7.退出“picli“
+- 3.原因:在每一个任务结尾处都添加了下一任务的开始，如图例如选择了启动任务选项，则将会运行如右图所有项目选择了商店任务选项，
+
+  则从商店任务开始到最后领邮箱任务结束
+  ![image](https://github.com/mm317670/mm317670/assets/142766247/667d7299-99a9-414d-8b4e-745397aabee3)
+![image](https://github.com/mm317670/mm317670/assets/142766247/881a6a98-a2c8-48f3-af3b-6ec9c8943f84)
+
+- 任务选项 “1启动” 说明：该任务流程包括了每日签到，如若嫌弃某一界面等待太久，
+
+  则可更改"post_delay"位置的数值（单位ms，1000ms＝1s）,其他不做变动（相关文件位置：MaaBA\resource\base\pipeline）
+- 有问题可到github反馈，带上视频，maaba版本，以及debug/maa.log
+- Issues/mm317670/MAABA (github.com)
+- 不会提issue？看下面视频，需要注意的是，视频所显示的为maa提issue，因此可直接复制上面链接进入maaba的
+- 给maa提issue的方法-MAA-Official-MAA-Official-哔哩哔哩视频 (bilibili.com)
 
