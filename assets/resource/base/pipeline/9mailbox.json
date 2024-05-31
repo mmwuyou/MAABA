@@ -26,7 +26,7 @@
         "recognition":"TemplateMatch",
         "template":"28.png",
         "action":"Click",
-        "post_delay":3000,
+        "post_delay":9000,
         "next":[
             "continue91",
             "items",
@@ -36,7 +36,7 @@
     "continue91":{
         "recognition":"OCR",
         "expected":"点击继续",
-        "post_delay":9000,
+        "post_delay":12000,
         "action":"Click",
         "next":[
             "items",
