@@ -7,16 +7,23 @@
     ],
     "resource": [
         {
-            "name": "官服",
+            "name": "国服（官服，b服都行）",
             "path": [
                 "{PROJECT_DIR}/resource/base"
             ]
         },
         {
-            "name": "B 服（暂无，未进行尝试是否通用）",
+            "name": "日服（暂无，未进行尝试是否通用）",
             "path": [
                 "{PROJECT_DIR}/resource/base",
-                "{PROJECT_DIR}/resource/bilibili"
+                "{PROJECT_DIR}/resource/Japan"
+            ]
+        },
+        {
+            "name": "国际服（英语）（暂无，未进行尝试是否通用）",
+            "path": [
+                "{PROJECT_DIR}/resource/base",
+                "{PROJECT_DIR}/resource/english"
             ]
         }
     ],

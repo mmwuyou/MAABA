@@ -3,6 +3,7 @@
         "next": [
             "weilandangan",
             "qiehuanzhanghao",
+            "update",
             "meiriqiandao",
             "gonggao",
             "cafe"
@@ -17,6 +18,7 @@
         "next": [
             "weilandangan",
             "qiehuanzhanghao",
+            "update",
             "meiriqiandao",
             "gonggao"
         ]
@@ -33,6 +35,22 @@
         ],
         "post_delay": 10000,
         "next": [
+            "weilandangan",
+            "qiehuanzhanghao",
+            "update",
+            "meiriqiandao",
+            "gonggao"
+        ]
+    },
+    "update":{
+        "recognition":"OCR",
+        "expected":"更新",
+        "action":"Click",
+        "post_delay":30000,
+        "target":[
+            769, 497, 0, 0
+        ],
+        "next":[
             "weilandangan",
             "qiehuanzhanghao",
             "meiriqiandao",

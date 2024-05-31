@@ -112,7 +112,7 @@
         "recognition":"OCR",
         "expected":"确认",
         "action":"Click",
-        "post_delay":3000,
+        "post_delay":7000,
         "next":[
             "finish61"
         ]
@@ -120,8 +120,8 @@
     "finish61":{
         "recognition":"OCR",
         "expected":"确认",
-        "post_wait_freezes":3000,
-        "post_delay":3000,
+        "post_wait_freezes":5000,
+        "post_delay":7000,
         "action":"Click",
         "next":[
             "railway61"
@@ -131,7 +131,7 @@
         "recognition":"OCR",
         "expected":"沙漠铁路",
         "action":"Click",
-        "post_delay":3000,
+        "post_delay":5000,
         "next":[
             "railway62",
             "up62"
@@ -183,7 +183,7 @@
         "recognition":"OCR",
         "expected":"确认",
         "action":"Click",
-        "post_delay":3000,
+        "post_delay":7000,
         "next":[
             "finish63"
         ]
@@ -191,8 +191,8 @@
     "finish63":{
         "recognition":"OCR",
         "expected":"确认",
-        "post_wait_freezes":3000,
-        "post_delay":3000,
+        "post_wait_freezes":5000,
+        "post_delay":7000,
         "action":"Click",
         "next":[
             "Classroom61"
@@ -226,7 +226,7 @@
         "recognition":"OCR",
         "expected":"讲堂",
         "action":"Click",
-        "post_delay":3000,
+        "post_delay":5000,
         "next":[
             "Classroom62",
             "up63"
@@ -278,7 +278,7 @@
         "recognition":"OCR",
         "expected":"确认",
         "action":"Click",
-        "post_delay":3000,
+        "post_delay":7000,
         "next":[
             "finish64"
         ]
@@ -286,8 +286,8 @@
     "finish64":{
         "recognition":"OCR",
         "expected":"确认",
-        "post_wait_freezes":3000,
-        "post_delay":3000,
+        "post_wait_freezes":5000,
+        "post_delay":7000,
         "action":"Click",
         "next":[
             "quit68",
